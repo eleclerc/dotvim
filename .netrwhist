@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/var/www/CorumResearch/tests'
+let g:netrw_dirhist_2='/etc/apache2/sites-available'
+let g:netrw_dirhist_3='/home/eric/public_html/muw/public'
+let g:netrw_dirhist_4='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug'
+let g:netrw_dirhist_5='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug/Controller'
+let g:netrw_dirhist_6='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug/Controller/Plugin'
+let g:netrw_dirhist_7='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug'
+let g:netrw_dirhist_8='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug/Controller'
+let g:netrw_dirhist_9='/home/eric/Downloads/zfdebug-read-only/library/ZFDebug/Controller/Plugin'
