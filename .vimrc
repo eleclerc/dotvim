@@ -1,3 +1,7 @@
+" Pathogen (plugin/bundle management)
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Enable loading filetype and indentation plugins
 filetype plugin on
 filetype indent on
