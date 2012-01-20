@@ -1,6 +1,8 @@
-" Pathogen (plugin/bundle management)
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" Vundle and bundles configuration
+source ~/.vim/bundles.vim
+
+" be iMproved
+set nocompatible                
 
 " Enable loading filetype and indentation plugins
 filetype plugin on
@@ -34,16 +36,32 @@ set tabstop=4
 set backspace=indent,eol,start
 
 " don't keep a backup after overwriting a file
-set nobackup
+"set nobackup
+" Move Backup Files to ~/.vim/sessions
+set backupdir=~/.vim/sessions
+set dir=~/.vim/sessions
 
 " how many command lines are remembered
 set history=50
+
+" enable automatic title setting for terminals 
+set title
+set titleold="Terminal"
+set titlestring=%F
 
 " show cursor position below each window
 set ruler
 
 " show (partial) command keys in the status line
 set showcmd
+
+" Make the command line two lines high and change the statusline display to
+" " something that looks useful.
+" set cmdheight=2
+" set laststatus=2
+" set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff}) 
+" set showcmd
+" set number
 
 " show match for partly typed search command
 set incsearch
@@ -66,16 +84,26 @@ set encoding=utf-8
 " end-of-line format
 set fileformat=unix
 
-if has('gui_running')
-    " list of font names to be used in the GUI
-    set guifont="DejaVu Sans Mono 10"
+" don't bell
+set noerrorbells
+
+if has("gui_running")
+    if has("mac")
+        set guifont=Meslo\ LG\ M\ DZ:h14
+        set fuoptions=maxvert,maxhorz
+    else
+        set guifont=DejaVu\ Sans\ Mono:h12
+    endif
     
     " remove toolbar
     set guioptions-=T
     
     " remove tearOff menu
     set guioptions-=t
-    
+   
+    " highlight current line
+    set cursorline
+
     " number of lines in the display
     set lines=50
     
@@ -87,17 +115,21 @@ if has('gui_running')
 
     " dark theme for a dark office
     colorscheme zenburn
+else
+    set background=dark
+    colorscheme myterm
 endif
 
 
 " Shortcut for Taglist plugin
 nnoremap <silent> <F8> :TlistToggle<CR>
 " Shortcut for NERDTree plugin
-nnoremap <silent> <F9> :NERDTreeToggle<CR>
+nnoremap <silent> <F7> :NERDTreeToggle<CR>
+
+inoremap jj <Esc>
 
 " THIS SHOULD GO IN FILETYPE CONFIG
 " PHP parser check (CTRL-L)
-"set makeprg=C:\Users\eleclerc\Applications\xampp\php\php.exe\ -l\ %
+"set makeprg=/usr/local/zend/bin/php\ -l\ %
 "set errorformat=%m\ in\ %f\ on\ line\ %l
-
 
