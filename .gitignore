@@ -1,5 +1,6 @@
 .DS_Store
 sessions/*
+!sessions/.gitignore
 bundle/*
 !bundle/vundle
 .netrwhist
