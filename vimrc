@@ -57,11 +57,14 @@ set showcmd
 
 " Make the command line two lines high and change the statusline display to
 " " something that looks useful.
+" if has('statusline')
 " set cmdheight=2
 " set laststatus=2
 " set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff}) 
+"   set statusline+=%{fugitive#statusline()}
 " set showcmd
 " set number
+" endif
 
 " show match for partly typed search command
 set incsearch
@@ -129,6 +132,7 @@ nnoremap <silent> <F7> :NERDTreeToggle<CR>
 inoremap jj <Esc>
 
 " THIS SHOULD GO IN FILETYPE CONFIG
+" --------------------------------
 " PHP parser check (CTRL-L)
 "set makeprg=/usr/local/zend/bin/php\ -l\ %
 "set errorformat=%m\ in\ %f\ on\ line\ %l
