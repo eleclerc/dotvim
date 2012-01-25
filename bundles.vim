@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " 
 " original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'int3/vim-extradite'
 Bundle 'Markdown'
 Bundle 'jQuery'
 Bundle 'matchit.zip'
