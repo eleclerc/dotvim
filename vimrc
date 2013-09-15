@@ -65,12 +65,18 @@ set showcmd
 " set showcmd
 " set number
 " endif
+set laststatus=2
+" Enable fancy mode for Powerline
+let g:Powerline_symbols = 'unicode'
 
 " show match for partly typed search command
 set incsearch
 
 " highlight all matches for the last used search pattern
 set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 " don't wrap long lines
 set nowrap
@@ -92,10 +98,10 @@ set noerrorbells
 
 if has("gui_running")
     if has("mac")
-        set guifont=Meslo\ LG\ M\ DZ:h14
+        set guifont=Menlo\ 14
         set fuoptions=maxvert,maxhorz
     else
-        set guifont=DejaVu\ Sans\ Mono:h12
+        set guifont=DejaVu\ Sans\ Mono\ 12
     endif
     
     " remove toolbar

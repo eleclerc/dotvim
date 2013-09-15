@@ -18,9 +18,10 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 Bundle 'matchit.zip'
 Bundle 'The-NERD-tree'
-Bundle 'taglist.vim'
+"Bundle 'taglist.vim'
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-powerline'
 
 " vim-scripts repos
 "Bundle 'FuzzyFinder'
