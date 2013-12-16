@@ -126,7 +126,7 @@ if has("gui_running")
     colorscheme zenburn
 else
     set background=dark
-    colorscheme myterm
+"    colorscheme zenburn
 endif
 
 
@@ -135,11 +135,6 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " Shortcut for NERDTree plugin
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
 
+" ipad keyboard friendly
 inoremap jj <Esc>
-
-" THIS SHOULD GO IN FILETYPE CONFIG
-" --------------------------------
-" PHP parser check (CTRL-L)
-"set makeprg=/usr/local/zend/bin/php\ -l\ %
-"set errorformat=%m\ in\ %f\ on\ line\ %l
 
