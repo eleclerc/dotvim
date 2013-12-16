@@ -1,6 +1,6 @@
 install Vundle 
 
-    git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 Link the vimrc file in the home dir
 
