@@ -2,7 +2,7 @@
 source ~/.vim/bundles.vim
 
 " be iMproved
-set nocompatible                
+set nocompatible
 
 " Enable loading filetype and indentation plugins
 filetype plugin on
@@ -44,7 +44,7 @@ set dir=~/.vim/sessions
 " how many command lines are remembered
 set history=50
 
-" enable automatic title setting for terminals 
+" enable automatic title setting for terminals
 set title
 set titleold="Terminal"
 set titlestring=%F
@@ -95,24 +95,24 @@ if has("gui_running")
     else
         set guifont=DejaVu\ Sans\ Mono\ 12
     endif
-    
+
     " remove toolbar
     set guioptions-=T
-    
+
     " remove tearOff menu
     set guioptions-=t
-   
+
     " highlight current line
     set cursorline
 
     " number of lines in the display
     set lines=50
-    
+
     " width of the display
-    set columns=120 
+    set columns=120
 
 	" make the mouse work like a Microsoft Windows mouse:
-	behave mswin
+    behave mswin
 
     " dark theme for a dark office
     colorscheme zenburn
