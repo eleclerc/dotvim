@@ -55,19 +55,11 @@ set ruler
 " show (partial) command keys in the status line
 set showcmd
 
-" Make the command line two lines high and change the statusline display to
-" " something that looks useful.
-" if has('statusline')
-" set cmdheight=2
-" set laststatus=2
-" set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff}) 
-"   set statusline+=%{fugitive#statusline()}
-" set showcmd
-" set number
-" endif
+" Make the command line two lines high, vim-airline will use it
 set laststatus=2
-" Enable fancy mode for Powerline
-let g:Powerline_symbols = 'unicode'
+
+" needed in some case for vim-airline
+set t_Co=256
 
 " show match for partly typed search command
 set incsearch

@@ -2,6 +2,13 @@ set nocompatible                " be iMproved
 filetype on                     " to prevent bug with svn/git and exit code of 1 for vim
 filetype off                    " required!
 
+" If vundle is not installed, do it first
+if (!isdirectory(expand("$HOME/.vim/bundle/vundle")))
+    call system(expand("mkdir -p $HOME/.vim/bundle"))
+    call system(expand("git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle"))
+    echoerr 'Vundle was freshly installed. You should run :BundleInstall'
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -13,15 +20,12 @@ Bundle 'gmarik/vundle'
 " 
 " original repos on github
 Bundle 'tpope/vim-fugitive'
-Bundle 'int3/vim-extradite'
 Bundle 'Markdown'
-Bundle 'jQuery'
 Bundle 'matchit.zip'
 Bundle 'The-NERD-tree'
 Bundle 'taglist.vim'
-Bundle 'wincent/Command-T'
-Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'scrooloose/syntastic'
+Bundle 'bling/vim-airline'
 
 " vim-scripts repos
 "Bundle 'FuzzyFinder'
