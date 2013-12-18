@@ -118,7 +118,8 @@ if has("gui_running")
     colorscheme zenburn
 else
     set background=dark
-"    colorscheme zenburn
+    colorscheme xoria256
+    let g:airline_theme="zenburn"
 endif
 
 
