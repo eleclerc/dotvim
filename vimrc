@@ -125,9 +125,22 @@ endif
 
 " Shortcut for Taglist plugin
 nnoremap <silent> <F8> :TlistToggle<CR>
-" Shortcut for NERDTree plugin
-nnoremap <silent> <F7> :NERDTreeToggle<CR>
 
 " ipad keyboard friendly
 inoremap jj <Esc>
+
+" Settings stolen from JeffreyWay's config https://gist.github.com/JeffreyWay/6753834
+"Auto change directory to match current file ,cd
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+"easier window navigation
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+" Shortcut for NERDTree plugin
+nmap <C-b> :NERDTreeToggle<cr>
+
+
+
+
 
