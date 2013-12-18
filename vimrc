@@ -119,7 +119,7 @@ if has("gui_running")
 else
     set background=dark
     colorscheme xoria256
-    let g:airline_theme="zenburn"
+    let g:airline_theme="bubblegum"
 endif
 
 
