@@ -17,8 +17,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles Here:
-" 
-" original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'Markdown'
 Bundle 'matchit.zip'
@@ -26,12 +24,19 @@ Bundle 'The-NERD-tree'
 Bundle 'taglist.vim'
 "Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
+" Colors scheme
+Bundle 'xoria256.vim'
+Bundle 'jnurmine/Zenburn'
 
+" Bundle git repos syntax example:
+" original repos on github
+"Bundle 'tpope/vim-fugitive'
 " vim-scripts repos
 "Bundle 'FuzzyFinder'
-
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
+" Git repos on your local machine (i.e. when working on your own plugin)
+"Bundle 'file:///Users/gmarik/path/to/plugin'
 
 filetype plugin indent on   " required!
 
