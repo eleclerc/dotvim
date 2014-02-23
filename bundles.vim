@@ -17,6 +17,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles Here:
+Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Markdown'
 Bundle 'matchit.zip'
