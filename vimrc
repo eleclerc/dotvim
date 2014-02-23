@@ -124,7 +124,8 @@ endif
 
 
 " Shortcut for Taglist plugin
-nnoremap <silent> <F8> :TlistToggle<CR>
+"nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 " ipad keyboard friendly
 inoremap jj <Esc>

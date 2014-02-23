@@ -22,7 +22,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Markdown'
 Bundle 'matchit.zip'
 Bundle 'The-NERD-tree'
-Bundle 'taglist.vim'
+Bundle 'majutsushi/tagbar'
 "Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 " Colors scheme
