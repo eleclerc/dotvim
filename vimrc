@@ -115,17 +115,21 @@ if has("gui_running")
     behave mswin
 
     " dark theme for a dark office
-    colorscheme zenburn
+    set background=dark
+    colorscheme xoria256
+    let g:airline_theme="bubblegum"
 else
     set background=dark
     colorscheme xoria256
     let g:airline_theme="bubblegum"
 endif
 
+" CtrlP config
+let g:ctrlp_root_markers = ['.idea']
 
-" Shortcut for Taglist plugin
-"nnoremap <silent> <F8> :TlistToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
+" Shortcuts
+nnoremap <C-r> :TagbarToggle<CR>
+nmap <C-b> :NERDTreeToggle<cr>
 
 " ipad keyboard friendly
 inoremap jj <Esc>
@@ -138,8 +142,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-" Shortcut for NERDTree plugin
-nmap <C-b> :NERDTreeToggle<cr>
 
 
 
