@@ -90,7 +90,7 @@ set noerrorbells
 
 if has("gui_running")
     if has("mac")
-        set guifont=Menlo\ 14
+        set guifont=Menlo\ Regular:h14
         set fuoptions=maxvert,maxhorz
     else
         set guifont=DejaVu\ Sans\ Mono\ 12
