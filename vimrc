@@ -131,6 +131,10 @@ let g:ctrlp_root_markers = ['.idea']
 nnoremap <C-r> :TagbarToggle<CR>
 nmap <C-b> :NERDTreeToggle<cr>
 
+" Utils
+nnoremap <F5> "=strftime("%c")<CR>P
+inoremap <F5> <C-R>=strftime("%c")<CR>
+
 " ipad keyboard friendly
 inoremap jj <Esc>
 
