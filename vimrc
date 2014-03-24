@@ -92,10 +92,10 @@ if has("gui_running")
     if has("mac")
         set guifont=Menlo\ Regular:h14
         set fuoptions=maxvert,maxhorz
-    elseif has('windows')
+    elseif has('win32')
         set guifont=Consolas:h12 
     else
-        set guifont=Source\ Code\ Pro\ 12
+        set guifont=Source\ Code\ Pro\ Medium\ 12
     endif
 
     " remove toolbar
@@ -126,7 +126,10 @@ endif
 let g:ctrlp_root_markers = ['.idea']
 
 " NERDTree config
-let g:NERDTreeDirArrows=0
+"let g:NERDTreeDirArrows=0
+
+" Tagbar config
+let g:tagbar_autoclose = 1
 
 " Shortcuts
 nnoremap <C-r> :TagbarToggle<CR>
@@ -152,3 +155,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+
+source ~/.vim/drupal.vim
