@@ -28,6 +28,7 @@ Bundle 'bling/vim-airline'
 " Colors scheme
 Bundle 'xoria256.vim'
 Bundle 'jnurmine/Zenburn'
+Bundle 'altercation/vim-colors-solarized'
 
 " Bundle git repos syntax example:
 " original repos on github
