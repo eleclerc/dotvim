@@ -92,8 +92,10 @@ if has("gui_running")
     if has("mac")
         set guifont=Menlo\ Regular:h14
         set fuoptions=maxvert,maxhorz
+    elseif has('windows')
+        set guifont=Consolas:h12 
     else
-        set guifont=DejaVu\ Sans\ Mono\ 12
+        set guifont=Source\ Code\ Pro\ 12
     endif
 
     " remove toolbar
@@ -118,22 +120,26 @@ if has("gui_running")
     set background=dark
     colorscheme xoria256
     let g:airline_theme="bubblegum"
-else
-    set background=dark
-    colorscheme xoria256
-    let g:airline_theme="bubblegum"
 endif
 
 " CtrlP config
 let g:ctrlp_root_markers = ['.idea']
+
+" NERDTree config
+let g:NERDTreeDirArrows=0
 
 " Shortcuts
 nnoremap <C-r> :TagbarToggle<CR>
 nmap <C-b> :NERDTreeToggle<cr>
 
 " Utils
+"  insert date/time based on local
 nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
+
+" Keyboard shortcuts
+nnoremap <C-r> :TagbarToggle<CR>
+nnoremap <C-b> :NERDTreeToggle<cr>
 
 " ipad keyboard friendly
 inoremap jj <Esc>
@@ -146,8 +152,3 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-
-
-
-
-
