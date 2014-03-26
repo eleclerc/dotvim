@@ -113,9 +113,9 @@ if has("gui_running")
     " width of the display
     set columns=120
 
-	" make the mouse work like a Microsoft Windows mouse:
+	  " make the mouse work like a Microsoft Windows mouse:
     behave mswin
-
+else
     " dark theme for a dark office
     set background=dark
     colorscheme xoria256
