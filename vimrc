@@ -131,19 +131,16 @@ let g:ctrlp_root_markers = ['.idea']
 " Tagbar config
 let g:tagbar_autoclose = 1
 
-" Shortcuts
+" Keyboard Shortcuts
 let mapleader=" "
 nnoremap <leader>t :TagbarToggle<CR>
-nmap <leader>b :NERDTreeToggle<cr>
+nmap <leader>f :NERDTreeToggle<cr>
+nmap <leader>b :CtrlPBuff<cr>
 
 " Utils
 "  insert date/time based on local
 nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
-
-" Keyboard shortcuts
-nnoremap <C-r> :TagbarToggle<CR>
-nnoremap <C-b> :NERDTreeToggle<cr>
 
 " ipad keyboard friendly
 inoremap jj <Esc>
