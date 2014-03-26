@@ -128,8 +128,9 @@ endif
 let g:ctrlp_root_markers = ['.idea']
 
 " Shortcuts
-nnoremap <C-r> :TagbarToggle<CR>
-nmap <C-b> :NERDTreeToggle<cr>
+let mapleader=" "
+nnoremap <leader>t :TagbarToggle<CR>
+nmap <leader>b :NERDTreeToggle<cr>
 
 " Utils
 nnoremap <F5> "=strftime("%c")<CR>P
@@ -139,8 +140,8 @@ inoremap <F5> <C-R>=strftime("%c")<CR>
 inoremap jj <Esc>
 
 " Settings stolen from JeffreyWay's config https://gist.github.com/JeffreyWay/6753834
-"Auto change directory to match current file ,cd
-nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+"Auto change directory to match current file
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 "easier window navigation
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
