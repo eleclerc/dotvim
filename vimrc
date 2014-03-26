@@ -115,12 +115,12 @@ if has("gui_running")
 
 	  " make the mouse work like a Microsoft Windows mouse:
     behave mswin
-else
-    " dark theme for a dark office
-    set background=dark
-    colorscheme xoria256
-    let g:airline_theme="bubblegum"
 endif
+
+" dark theme for a dark office
+set background=dark
+colorscheme xoria256
+let g:airline_theme="bubblegum"
 
 " CtrlP config
 let g:ctrlp_root_markers = ['.idea']
