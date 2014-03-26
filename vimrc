@@ -157,5 +157,3 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-
-source ~/.vim/drupal.vim
