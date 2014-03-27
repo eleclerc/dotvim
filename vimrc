@@ -139,6 +139,8 @@ let mapleader=" "
 nnoremap <leader>b :CtrlPBuff<cr>
 nnoremap <leader>t :CtrlPBufTag<cr>
 nnoremap <leader>T :CtrlPTag<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Utils
 "  insert date/time based on local
@@ -146,7 +148,7 @@ nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
 
 " ipad keyboard friendly
-inoremap jj <Esc>
+inoremap jk <Esc>
 
 " Settings stolen from JeffreyWay's config https://gist.github.com/JeffreyWay/6753834
 "Auto change directory to match current file
