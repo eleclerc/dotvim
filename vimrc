@@ -124,18 +124,21 @@ let g:airline_theme="bubblegum"
 
 " CtrlP config
 let g:ctrlp_root_markers = ['.idea']
+let g:ctrlp_extensions = ['tag', 'buffertag']
 
 " NERDTree config
 "let g:NERDTreeDirArrows=0
 
 " Tagbar config
-let g:tagbar_autoclose = 1
+"let g:tagbar_autoclose = 1
 
 " Keyboard Shortcuts
 let mapleader=" "
-nnoremap <leader>t :TagbarToggle<CR>
-nmap <leader>f :NERDTreeToggle<cr>
+"nnoremap <leader>t :TagbarToggle<CR>
+"nmap <leader>f :NERDTreeToggle<cr>
 nmap <leader>b :CtrlPBuff<cr>
+nmap <leader>t :CtrlPBufTag<cr>
+nmap <leader>T :CtrlPTag<cr>
 
 " Utils
 "  insert date/time based on local

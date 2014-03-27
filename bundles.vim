@@ -18,18 +18,19 @@ Bundle 'gmarik/vundle'
 
 " My Bundles Here:
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
 Bundle 'Markdown'
 Bundle 'matchit.zip'
-Bundle 'The-NERD-tree'
-"Bundle 'tpope/vim-vinegar'
-Bundle 'majutsushi/tagbar'
 "Bundle 'scrooloose/syntastic'
+"Bundle 'majutsushi/tagbar'
+"Bundle 'The-NERD-tree'
 Bundle 'bling/vim-airline'
-" Colors scheme
+"Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-vinegar'
+
+" Colors Scheme Bundles
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'xoria256.vim'
 Bundle 'jnurmine/Zenburn'
-Bundle 'altercation/vim-colors-solarized'
 
 " Bundle git repos syntax example:
 " original repos on github
