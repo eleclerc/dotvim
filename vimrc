@@ -136,9 +136,9 @@ let g:ctrlp_extensions = ['tag', 'buffertag']
 let mapleader=" "
 "nnoremap <leader>t :TagbarToggle<CR>
 "nmap <leader>f :NERDTreeToggle<cr>
-nmap <leader>b :CtrlPBuff<cr>
-nmap <leader>t :CtrlPBufTag<cr>
-nmap <leader>T :CtrlPTag<cr>
+nnoremap <leader>b :CtrlPBuff<cr>
+nnoremap <leader>t :CtrlPBufTag<cr>
+nnoremap <leader>T :CtrlPTag<cr>
 
 " Utils
 "  insert date/time based on local
