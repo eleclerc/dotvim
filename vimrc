@@ -94,6 +94,8 @@ if has("gui_running")
         set fuoptions=maxvert,maxhorz
     elseif has('win32')
         set guifont=Consolas:h12 
+    elseif has('win32unix')
+        set guifont=Consolas\ 12 
     else
         set guifont=Source\ Code\ Pro\ Medium\ 12
     endif
