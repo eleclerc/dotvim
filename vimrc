@@ -126,26 +126,31 @@ let g:airline_theme="bubblegum"
 
 " CtrlP config
 let g:ctrlp_root_markers = ['.idea']
+let g:ctrlp_extensions = ['tag', 'buffertag']
 
 " NERDTree config
 "let g:NERDTreeDirArrows=0
 
 " Tagbar config
-let g:tagbar_autoclose = 1
+"let g:tagbar_autoclose = 1
 
 " Keyboard Shortcuts
 let mapleader=" "
-nnoremap <leader>t :TagbarToggle<CR>
-nmap <leader>f :NERDTreeToggle<cr>
-nmap <leader>b :CtrlPBuff<cr>
+"nnoremap <leader>t :TagbarToggle<CR>
+"nmap <leader>f :NERDTreeToggle<cr>
+nnoremap <leader>b :CtrlPBuff<cr>
+nnoremap <leader>t :CtrlPBufTag<cr>
+nnoremap <leader>T :CtrlPTag<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Utils
-"  insert date/time based on local
-nnoremap <F5> "=strftime("%c")<CR>P
-inoremap <F5> <C-R>=strftime("%c")<CR>
+"  insert date/time
+nnoremap <F5> "=strftime("%a %b %d %T %Y")<CR>P
+inoremap <F5> <C-R>=strftime("%a %b %d %T %Y")<CR>
 
 " ipad keyboard friendly
-inoremap jj <Esc>
+inoremap jk <Esc>
 
 " Settings stolen from JeffreyWay's config https://gist.github.com/JeffreyWay/6753834
 "Auto change directory to match current file

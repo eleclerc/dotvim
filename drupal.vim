@@ -25,3 +25,7 @@ set softtabstop=2
 
 " number of spaces a <Tab> in the text stands for
 set tabstop=2
+
+function! Drupaltags()
+  execute "!ctags --langmap=php:.engine.inc.module.theme.install.php --php-kinds=cdfi --languages=php --recurse"
+endfunction
