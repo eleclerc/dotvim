@@ -143,9 +143,9 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Utils
-"  insert date/time based on local
-nnoremap <F5> "=strftime("%c")<CR>P
-inoremap <F5> <C-R>=strftime("%c")<CR>
+"  insert date/time
+nnoremap <F5> "=strftime("%a %b %d %T %Y")<CR>P
+inoremap <F5> <C-R>=strftime("%a %b %d %T %Y")<CR>
 
 " ipad keyboard friendly
 inoremap jk <Esc>
