@@ -49,6 +49,9 @@ set title
 set titleold="Terminal"
 set titlestring=%F
 
+" Show the line number relative to the line with the cursor in front of each line
+set relativenumber
+
 " show cursor position below each window
 set ruler
 
