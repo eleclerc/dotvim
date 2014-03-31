@@ -35,6 +35,8 @@ set tabstop=4
 " specifies what <BS>, CTRL-W, etc. can do in Insert mode
 set backspace=indent,eol,start
 
+" allow undo even after a file have been closed and reopened (use undodir)
+set undofile
 " don't keep a backup after overwriting a file
 "set nobackup
 " Move Backup Files to ~/.vim/sessions
