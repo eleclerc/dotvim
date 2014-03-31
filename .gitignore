@@ -3,4 +3,6 @@ sessions/*
 !sessions/.gitignore
 bundle/*
 !bundle/.gitignore
+undos/*
+!undos/.gitignore
 .netrwhist
