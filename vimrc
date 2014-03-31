@@ -1,8 +1,14 @@
 " Vundle and bundles configuration
-source ~/.vim/bundles.vim
+source $HOME/.vim/bundles.vim
 
 " be iMproved
 set nocompatible
+
+" don't keep a backup after overwriting a file
+"set nobackup
+set backupdir=$HOME/.vim/sessions
+set dir=$HOME/.vim/sessions
+set undodir=$HOME/.vim/undos
 
 " Enable loading filetype and indentation plugins
 filetype plugin on
@@ -37,11 +43,6 @@ set backspace=indent,eol,start
 
 " allow undo even after a file have been closed and reopened (use undodir)
 set undofile
-" don't keep a backup after overwriting a file
-"set nobackup
-" Move Backup Files to ~/.vim/sessions
-set backupdir=~/.vim/sessions
-set dir=~/.vim/sessions
 
 " how many command lines are remembered
 set history=50
