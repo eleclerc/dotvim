@@ -127,7 +127,9 @@ endif
 
 " dark theme for a dark office
 set background=dark
+"colorscheme solarized
 colorscheme xoria256
+"colorscheme zenburn
 let g:airline_theme="bubblegum"
 
 " CtrlP config
