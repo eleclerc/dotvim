@@ -53,7 +53,7 @@ set titleold="Terminal"
 set titlestring=%F
 
 " Show the line number relative to the line with the cursor in front of each line
-set relativenumber
+"set relativenumber
 
 " show cursor position below each window
 set ruler
@@ -156,7 +156,8 @@ nnoremap <F5> "=strftime("%a %b %d %T %Y")<CR>P
 inoremap <F5> <C-R>=strftime("%a %b %d %T %Y")<CR>
 
 " ipad keyboard friendly
-inoremap jk <Esc>
+" will cause issues when inserting hash
+"inoremap jk <Esc>
 
 " Settings stolen from JeffreyWay's config https://gist.github.com/JeffreyWay/6753834
 "Auto change directory to match current file
