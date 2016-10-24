@@ -27,6 +27,7 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 "Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-vinegar'
+Bundle 'udalov/kotlin-vim'
 
 " Colors Scheme Bundles
 Bundle 'altercation/vim-colors-solarized'
